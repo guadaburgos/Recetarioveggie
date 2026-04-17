@@ -24,6 +24,15 @@
       object-fit: cover;
     }
 
+    .card {
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+    }
+
+
     footer {
       background-color: #198754;
       color: white;
@@ -34,8 +43,21 @@
   </style>
 </head>
 <body>
-
-  
+     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="#">Recetas Veggie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Recetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <header>
     <div id="carouselRecetas" class="carousel slide" data-bs-ride="carousel">
       
@@ -89,9 +111,51 @@
     <div class="titulo-principal">
       <h1>Recetario Vegetariano</h1>
       <p class="lead">Tres ideas simples, ricas y saludables para disfrutar en casa.</p>
+      <p class="lead">Ideas simples, ricas y saludables para disfrutar en casa.</p>
     </div>
 
     <div class="row g-4">
+
+        <div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="https://recetasveganas.net/wp-content/uploads/2020/09/bowl-arroz-hummus-verdura-saludable-vegano-recetas.jpg" class="card-img-top" alt="Bowl vegetariano">
+    <div class="card-body">
+      <h5 class="card-title">Bowl de arroz con vegetales</h5>
+      <p class="card-text">
+        Un plato completo, nutritivo y muy fácil de preparar con arroz y verduras salteadas.
+      </p>
+      <p><strong>Ingredientes:</strong> Bowl saludable de arroz, hummus casero, crudités y calabaza.</p>
+      <a href="#" class="btn btn-outline-success">Ver receta</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800" class="card-img-top" alt="Tostadas de palta">
+    <div class="card-body">
+      <h5 class="card-title">Tostadas de palta</h5>
+      <p class="card-text">
+        Una opción rápida y saludable, ideal para desayuno o merienda.
+      </p>
+      <p><strong>Ingredientes:</strong> pan integral, palta, tomate, limón y semillas.</p>
+      <a href="#" class="btn btn-outline-success">Ver receta</a>
+    </div>
+  </div>
+</div>
+        <div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="https://i.blogs.es/441fac/espaguetis_verduras/1366_2000.jpg" class="card-img-top" alt="Pasta vegetariana">
+    <div class="card-body">
+      <h5 class="card-title">Pasta con verduras</h5>
+      <p class="card-text">
+        Un plato simple y delicioso con fideos, salteados con verduras.
+      </p>
+      <p><strong>Ingredientes:</strong> fideos, tomate, espinaca, ajo y queso.</p>
+      <a href="#" class="btn btn-outline-success">Ver receta</a>
+    </div>
+  </div>
+</div>
 
       <div class="col-md-4">
         <div class="card h-100 shadow-sm">

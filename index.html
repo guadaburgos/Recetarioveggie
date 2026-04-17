@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetario Vegetariano Casero</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .carousel-item img {
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .titulo-principal {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card {
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+    }
+
+
+    footer {
+      background-color: #4c57e6;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="#">Recetas Veggie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Recetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div id="carouselRecetas" class="carousel slide" data-bs-ride="carousel">
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselRecetas" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselRecetas" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselRecetas" data-bs-slide-to="2"></button>
+      </div>
+
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200" class="d-block w-100" alt="Ensalada vegetariana">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Recetas frescas y saludables</h3>
+            <p>Ideas vegetarianas simples para todos los días</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200" class="d-block w-100" alt="Plato vegetariano">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Comidas llenas de color</h3>
+            <p>Sabores naturales y nutritivos</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=1200" class="d-block w-100" alt="Receta saludable">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Opciones fáciles de preparar</h3>
+            <p>Platos vegetarianos ricos y caseros</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselRecetas" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselRecetas" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </header>
+
+  
+  <main class="container">
+    <div class="titulo-principal">
+      <h1>Recetario Vegetariano</h1>
+      <p class="lead">Ideas simples, ricas y saludables para disfrutar en casa.</p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="https://recetasveganas.net/wp-content/uploads/2020/09/bowl-arroz-hummus-verdura-saludable-vegano-recetas.jpg" class="card-img-top" alt="Bowl vegetariano">
+    <div class="card-body">
+      <h5 class="card-title">Bowl de arroz con vegetales</h5>
+      <p class="card-text">
+        Un plato completo, nutritivo y muy fácil de preparar con arroz y verduras salteadas.
+      </p>
+      <p><strong>Ingredientes:</strong> Bowl saludable de arroz, hummus casero, crudités y calabaza.</p>
+      <a href="#" class="btn btn-outline-success">Ver receta</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800" class="card-img-top" alt="Tostadas de palta">
+    <div class="card-body">
+      <h5 class="card-title">Tostadas de palta</h5>
+      <p class="card-text">
+        Una opción rápida y saludable, ideal para desayuno o merienda.
+      </p>
+      <p><strong>Ingredientes:</strong> pan integral, palta, tomate, limón y semillas.</p>
+      <a href="#" class="btn btn-outline-success">Ver receta</a>
+    </div>
+  </div>
+</div>
+        <div class="col-md-4">
+  <div class="card h-100 shadow-sm">
+    <img src="https://i.blogs.es/441fac/espaguetis_verduras/1366_2000.jpg" class="card-img-top" alt="Pasta vegetariana">
+    <div class="card-body">
+      <h5 class="card-title">Pasta con verduras</h5>
+      <p class="card-text">
+        Un plato simple y delicioso con fideos, salteados con verduras.
+      </p>
+      <p><strong>Ingredientes:</strong> fideos, tomate, espinaca, ajo y queso.</p>
+      <a href="#" class="btn btn-outline-success">Ver receta</a>
+    </div>
+  </div>
+</div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800" class="card-img-top" alt="Ensalada de quinoa">
+          <div class="card-body">
+            <h5 class="card-title">Ensalada de quinoa</h5>
+            <p class="card-text">
+              Una opción liviana y nutritiva con quinoa, tomate, pepino, zanahoria y hojas verdes.
+            </p>
+            <p><strong>Ingredientes:</strong> quinoa, tomate, pepino, zanahoria, lechuga y limón.</p>
+            <a href="#" class="btn btn-outline-success">Ver receta</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800" class="card-img-top" alt="Tarta de verduras">
+          <div class="card-body">
+            <h5 class="card-title">Tarta de verduras</h5>
+            <p class="card-text">
+              Ideal para el almuerzo o la cena, preparada con zapallito, cebolla, morrón y queso.
+            </p>
+            <p><strong>Ingredientes:</strong> masa para tarta, verduras salteadas, huevo y queso.</p>
+            <a href="#" class="btn btn-outline-success">Ver receta</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://recetasdecocina.elmundo.es/wp-content/uploads/2026/01/hamburguesa-de-lentejas.jpg" class='card-img-top' alt="Hamburguesas de lentejas">
+          <div class="card-body">
+            <h5 class="card-title">Hamburguesas de lentejas</h5>
+            <p class="card-text">
+              Una receta práctica y rendidora, perfecta para acompañar con ensalada o pan casero.
+            </p>
+            <p><strong>Ingredientes:</strong> lentejas cocidas, cebolla, ajo, zanahoria y pan rallado.</p>
+            <a href="#" class="btn btn-outline-success">Ver receta</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <footer>
+    <p><strong>Contacto:</strong> recetariovegetariano@email.com</p>
+    <p><strong>Fuente:</strong> recetas e inspiración de cocina vegetariana y uso de Bootstrap</p>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+ 
